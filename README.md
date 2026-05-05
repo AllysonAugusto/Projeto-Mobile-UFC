@@ -5,7 +5,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6a53b89d-6007-4833-9118-ade2e4388a7e" width="100%"/>
 </p>
-[Acesse as telas do projeto no Figma](https://www.figma.com/design/Cfivm9YhSHqVLeQbkaYKIg/MemoBrain?node-id=5-2&t=dk5BeQFGYttWYBGj-1)
+Acesse as telas do projeto no Figma: https://www.figma.com/design/Cfivm9YhSHqVLeQbkaYKIg/MemoBrain?node-id=5-2&t=dk5BeQFGYttWYBGj-1
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Em_Desenvolvimento-blue)
 ![Curso](https://img.shields.io/badge/Curso-Redes_de_Computadores-orange)
