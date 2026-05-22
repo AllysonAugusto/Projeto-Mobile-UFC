@@ -2,13 +2,13 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23400245)
 # Plataforma de Memorização para Estudantes
 
+![Status do Projeto](https://img.shields.io/badge/Status-Em_Desenvolvimento-blue)
+![Curso](https://img.shields.io/badge/Curso-Redes_de_Computadores-orange)
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6a53b89d-6007-4833-9118-ade2e4388a7e" width="100%"/>
 </p>
 Acesse as telas do projeto no Figma: https://www.figma.com/design/Cfivm9YhSHqVLeQbkaYKIg/MemoBrain?node-id=5-2&t=dk5BeQFGYttWYBGj-1
-
-![Status do Projeto](https://img.shields.io/badge/Status-Em_Desenvolvimento-blue)
-![Curso](https://img.shields.io/badge/Curso-Redes_de_Computadores-orange)
 
 ## Descrição
 Aplicação mobile inspirada em ferramentas de flashcards, mas com múltiplos formatos de exercícios para otimizar a revisão de conteúdos. O projeto foca em ir além do modelo tradicional de "frente e verso", oferecendo uma experiência de estudo ativo completa.
