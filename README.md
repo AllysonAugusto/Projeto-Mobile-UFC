@@ -10,12 +10,12 @@ Acesse as telas do projeto no Figma: https://www.figma.com/design/Cfivm9YhSHqVLe
 ![Status do Projeto](https://img.shields.io/badge/Status-Em_Desenvolvimento-blue)
 ![Curso](https://img.shields.io/badge/Curso-Redes_de_Computadores-orange)
 
-## 📝 Descrição
+## Descrição
 Aplicação mobile inspirada em ferramentas de flashcards, mas com múltiplos formatos de exercícios para otimizar a revisão de conteúdos. O projeto foca em ir além do modelo tradicional de "frente e verso", oferecendo uma experiência de estudo ativo completa.
 
 ---
 
-## 👥 Equipe
+## Equipe
 | Nome | Matrícula | Curso |
 | :--- | :---: | :--- |
 | **Guilherme Oliveira De Lima** | 558311 | Redes de Computadores |
@@ -26,7 +26,7 @@ Aplicação mobile inspirada em ferramentas de flashcards, mas com múltiplos fo
 
 ---
 
-## 🎯 Objetivos e Impacto
+## Objetivos e Impacto
 
 ### **Objetivo Geral**
 Desenvolver uma plataforma dinâmica para auxiliar estudantes no processo de memorização e revisão de conteúdos para provas, vestibulares e concursos públicos.
@@ -41,7 +41,7 @@ Através da diversificação de exercícios, espera-se uma melhora significativa
 
 ---
 
-## 🚀 Funcionalidades da Aplicação
+## Funcionalidades da Aplicação
 
 ### **Tipos de Exercícios e Atividades**
 A plataforma oferece uma vasta gama de ferramentas para diferentes estilos de aprendizagem:
