@@ -29,7 +29,7 @@ data class Caderno(
 // 2. TELA PRINCIPAL (FRONT-END)
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CadernosTelas() {
+fun CadernosTelas(modifier: Modifier = Modifier) {
     val listaCadernos = remember {
         listOf(
             Caderno("1", "Ciência de Dados", 6, 14),

@@ -29,7 +29,7 @@ data class MetodoEstudo(val titulo: String, val emoji: String)
 data class AtividadeRecente(val titulo: String, val subtitulo: String)
 
 @Composable
-fun CadernosTelas2() {
+fun CadernosTelas2(modifier: Modifier = Modifier) {
     val chipsFiltros = listOf("Todos", "Revisar Hoje", "Em andamento", "Concluidos")
     var chipSelecionado by remember { mutableStateOf("Todos") }
 
