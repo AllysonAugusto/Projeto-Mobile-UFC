@@ -29,7 +29,7 @@ Aplicação mobile inspirada em ferramentas de flashcards, mas com múltiplos fo
 ## 🎯 Objetivos e Impacto
 
 ### **Objetivo Geral**
-Desenvolver uma plataforma dinâmica para auxiliar estudantes no processo de memorização e revisão de conteúdos para provas, vestibulares e concursos públicos.
+Desenvolver uma plataforma dinâmica, para auxiliar estudantes no processo de memorização e revisão de conteúdos para provas, vestibulares e concursos públicos.
 
 ### **Público-Alvo**
 * **Concurseiros:**
