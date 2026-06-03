@@ -1,5 +1,6 @@
 package com.memobrain.memonow.features.login
 
+import android.widget.Space
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -14,7 +15,6 @@ import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
@@ -31,19 +31,20 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.ui.Alignment
 import com.memobrain.memonow.R
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.width
 
 @Composable
 fun LoginTela(){
 
     var email by remember { mutableStateOf("")}
     var senha by remember { mutableStateOf("") }
-    var mostrarSenha by remember {mutableStateOf(false )}
     var mensagemLogin by remember { mutableStateOf("") }
 
+    // Container principal
     Surface(
         modifier = Modifier.fillMaxSize(),
         color = Color(0xFFEEF0F3),
@@ -59,6 +60,8 @@ fun LoginTela(){
             verticalArrangement = Arrangement.Top
 
             ) {
+
+            // Logo e nome do app
             Image(
                 painter = painterResource(id = R.drawable.ic_memobrain_logo),
                 contentDescription = "Logo MemoBrain",
@@ -76,6 +79,7 @@ fun LoginTela(){
 
             Spacer(modifier = Modifier.height(30.dp))
 
+            // Campo e-mail
             OutlinedTextField(
                 value = email,
                 onValueChange = {email = it},
@@ -101,6 +105,7 @@ fun LoginTela(){
 
             Spacer(modifier = Modifier.height(14.dp))
 
+            // Campo senha
             OutlinedTextField(
                 value = senha,
                 onValueChange = {senha = it},
@@ -114,6 +119,7 @@ fun LoginTela(){
                 },
                 singleLine = true,
                 shape = RoundedCornerShape(12.dp),
+                visualTransformation = PasswordVisualTransformation(),
                 colors = OutlinedTextFieldDefaults.colors(
                     focusedContainerColor = Color.White,
                     unfocusedContainerColor = Color.White,
@@ -126,6 +132,7 @@ fun LoginTela(){
 
             Spacer(modifier = Modifier.height(10.dp))
 
+            // Link recuperar senha
             Text(
                 text = "Esqueci a senha?",
                 modifier = Modifier.fillMaxWidth(),
@@ -136,6 +143,7 @@ fun LoginTela(){
 
             Spacer(modifier = Modifier.height(24.dp))
 
+            //Botao validacao login
             Button(
                 onClick = {
                     if (email == "aluno@alu.ufc.br" && senha == "aluno"){
@@ -173,6 +181,7 @@ fun LoginTela(){
 
             Spacer(modifier = Modifier.height(26.dp))
 
+            //'ou continue com'
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
@@ -189,12 +198,79 @@ fun LoginTela(){
                     modifier = Modifier.padding(start = 12.dp, end=12.dp)
                 )
 
+
                 HorizontalDivider(
                     modifier = Modifier.weight(1f),
                     color = Color(0xFFD9DDE2)
                 )
             }
 
+            Spacer(modifier = Modifier.height(28.dp))
+
+            //Botoes
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.Center
+            ) {
+                BotaoSocial(R.drawable.ic_google, "Google")
+                Spacer(modifier = Modifier.width(16.dp))
+                BotaoSocial(R.drawable.ic_apple, "Apple")
+                Spacer(modifier = Modifier.width(16.dp))
+                BotaoSocial(R.drawable.ic_facebook, "Facebook")
+
+            }
+
+
+            Spacer(modifier = Modifier.height(54.dp))
+
+            //Redirecionar para cadastro
+            Text(
+                text = "Se você não tem uma conta",
+                color = Color(0xFFA9AFB7),
+                fontSize = 13.sp
+            )
+
+            Row{
+                Text(
+                    text = "você pode ",
+                    color = Color(0xFFA9AFB7),
+                    fontSize = 13.sp
+                )
+
+                Text(
+                    text = "Registrar aqui",
+                    color = Color(0xFF2A5A82),
+                    fontSize = 13.sp
+                )
+            }
+
             }
         }
     }
+
+//Componente - botoes de login
+@Composable
+fun BotaoSocial(
+    icone: Int,
+    descricao: String
+) {
+    Surface(
+        modifier = Modifier
+            .width(86.dp)
+            .height(52.dp),
+        color = Color.White,
+        shape = RoundedCornerShape(10.dp),
+        shadowElevation = 6.dp
+    ) {
+        Box(
+            modifier = Modifier.fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            Image(
+                painter = painterResource(id = icone),
+                contentDescription = descricao,
+                modifier = Modifier.size(24.dp)
+            )
+        }
+    }
+}
