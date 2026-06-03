@@ -1,9 +1,6 @@
 package com.memobrain.memonow.features.login
 
-<<<<<<< HEAD
 import android.widget.Space
-=======
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -18,10 +15,7 @@ import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
-<<<<<<< HEAD
-=======
 import androidx.compose.material3.ButtonColors
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
@@ -38,33 +32,28 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.layout.Row
-<<<<<<< HEAD
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.ui.Alignment
 import com.memobrain.memonow.R
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.width
-=======
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.ui.Alignment
 import com.memobrain.memonow.R
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
 
 @Composable
 fun LoginTela(){
 
     var email by remember { mutableStateOf("")}
     var senha by remember { mutableStateOf("") }
-<<<<<<< HEAD
     var mensagemLogin by remember { mutableStateOf("") }
 
     // Container principal
-=======
+
     var mostrarSenha by remember {mutableStateOf(false )}
     var mensagemLogin by remember { mutableStateOf("") }
 
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
     Surface(
         modifier = Modifier.fillMaxSize(),
         color = Color(0xFFEEF0F3),
@@ -80,11 +69,8 @@ fun LoginTela(){
             verticalArrangement = Arrangement.Top
 
             ) {
-<<<<<<< HEAD
 
             // Logo e nome do app
-=======
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
             Image(
                 painter = painterResource(id = R.drawable.ic_memobrain_logo),
                 contentDescription = "Logo MemoBrain",
@@ -102,10 +88,7 @@ fun LoginTela(){
 
             Spacer(modifier = Modifier.height(30.dp))
 
-<<<<<<< HEAD
             // Campo e-mail
-=======
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
             OutlinedTextField(
                 value = email,
                 onValueChange = {email = it},
@@ -131,10 +114,7 @@ fun LoginTela(){
 
             Spacer(modifier = Modifier.height(14.dp))
 
-<<<<<<< HEAD
             // Campo senha
-=======
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
             OutlinedTextField(
                 value = senha,
                 onValueChange = {senha = it},
@@ -148,10 +128,7 @@ fun LoginTela(){
                 },
                 singleLine = true,
                 shape = RoundedCornerShape(12.dp),
-<<<<<<< HEAD
                 visualTransformation = PasswordVisualTransformation(),
-=======
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
                 colors = OutlinedTextFieldDefaults.colors(
                     focusedContainerColor = Color.White,
                     unfocusedContainerColor = Color.White,
@@ -164,10 +141,7 @@ fun LoginTela(){
 
             Spacer(modifier = Modifier.height(10.dp))
 
-<<<<<<< HEAD
             // Link recuperar senha
-=======
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
             Text(
                 text = "Esqueci a senha?",
                 modifier = Modifier.fillMaxWidth(),
@@ -177,11 +151,8 @@ fun LoginTela(){
             )
 
             Spacer(modifier = Modifier.height(24.dp))
-
-<<<<<<< HEAD
             //Botao validacao login
-=======
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
+
             Button(
                 onClick = {
                     if (email == "aluno@alu.ufc.br" && senha == "aluno"){
@@ -218,11 +189,7 @@ fun LoginTela(){
             }
 
             Spacer(modifier = Modifier.height(26.dp))
-
-<<<<<<< HEAD
             //'ou continue com'
-=======
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
@@ -238,18 +205,11 @@ fun LoginTela(){
                     fontSize = 12.sp,
                     modifier = Modifier.padding(start = 12.dp, end=12.dp)
                 )
-
-<<<<<<< HEAD
-
-=======
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
                 HorizontalDivider(
                     modifier = Modifier.weight(1f),
                     color = Color(0xFFD9DDE2)
                 )
             }
-
-<<<<<<< HEAD
             Spacer(modifier = Modifier.height(28.dp))
 
             //Botoes
@@ -319,8 +279,6 @@ fun BotaoSocial(
         }
     }
 }
-=======
             }
         }
     }
->>>>>>> c7ae9942d14c12aabfdbdbc7a7958bc58b0c140f
